@@ -20,7 +20,11 @@ services:
    ports:
      - "9000:9000"
      - "12900:12900"
+     - "12201/udp:12201/udp"
+     - "1514/udp:1514/udp"
 
+
+# This compose file is taken from http://docs.graylog.org/en/2.0/pages/installation/docker.html
 # See https://hub.docker.com/r/graylog2/server/ for more details
 # Runs at 192.168.99.100:9000 (on mac) username/password = admin/admin
 
